@@ -1,0 +1,180 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base Styles */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+  
+  body {
+    @apply font-sans bg-cream text-dark antialiased transition-colors duration-300;
+  }
+  
+  body.dark {
+    @apply bg-dark-500 text-cream;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+  
+  ::selection {
+    @apply bg-primary/30 text-dark;
+  }
+  
+  .dark ::selection {
+    @apply bg-primary/30 text-cream;
+  }
+}
+
+/* Custom Components */
+@layer components {
+  .container-custom {
+    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
+  
+  .section-padding {
+    @apply py-16 md:py-24 lg:py-32;
+  }
+  
+  .btn-primary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 bg-primary text-white font-medium rounded-lg 
+           hover:bg-primary-600 transition-all duration-300 transform hover:scale-105 hover:shadow-lg
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  
+  .btn-secondary {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-primary text-primary font-medium rounded-lg 
+           hover:bg-primary hover:text-white transition-all duration-300 transform hover:scale-105
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-offset-2;
+  }
+  
+  .card {
+    @apply bg-white dark:bg-dark-400 rounded-2xl shadow-lg p-6 transition-all duration-300
+           hover:shadow-xl hover:-translate-y-1;
+  }
+  
+  .gradient-text {
+    @apply bg-gradient-to-r from-primary via-primary-400 to-primary-600 bg-clip-text text-transparent;
+  }
+  
+  .gradient-bg {
+    @apply bg-gradient-to-br from-cream via-cream-100 to-cream-300 
+           dark:from-dark-500 dark:via-dark-400 dark:to-dark-300;
+  }
+  
+  .section-title {
+    @apply text-3xl md:text-4xl lg:text-5xl font-heading font-bold text-center mb-4;
+  }
+  
+  .section-subtitle {
+    @apply text-lg text-muted dark:text-muted-light text-center max-w-2xl mx-auto mb-12;
+  }
+  
+  .tech-tag {
+    @apply inline-flex items-center px-3 py-1 bg-primary/10 text-primary text-sm font-medium rounded-full
+           dark:bg-primary/20 dark:text-primary-200;
+  }
+  
+  .nav-link {
+    @apply relative text-dark dark:text-cream font-medium hover:text-primary dark:hover:text-primary transition-colors duration-300;
+  }
+  
+  .nav-link::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-0.5 bg-primary transition-all duration-300;
+  }
+  
+  .nav-link:hover::after,
+  .nav-link.active::after {
+    @apply w-full;
+  }
+  
+  .nav-link.active {
+    @apply text-primary;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+  
+  .animate-delay-100 {
+    animation-delay: 100ms;
+  }
+  
+  .animate-delay-200 {
+    animation-delay: 200ms;
+  }
+  
+  .animate-delay-300 {
+    animation-delay: 300ms;
+  }
+  
+  .animate-delay-500 {
+    animation-delay: 500ms;
+  }
+}
+
+/* Scrollbar Styles */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-cream-300 dark:bg-dark-300;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-primary/50 rounded-full hover:bg-primary/70;
+}
+
+/* Loading Screen */
+.loading-screen {
+  @apply fixed inset-0 z-[9999] flex items-center justify-center bg-cream dark:bg-dark-500 transition-opacity duration-500;
+}
+
+.loading-screen.fade-out {
+  @apply opacity-0 pointer-events-none;
+}
+
+/* Particle Animation Background */
+.particles-bg {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.particle {
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: rgba(200, 82, 26, 0.2);
+  animation: float 6s ease-in-out infinite;
+}
+
+.particle:nth-child(1) { left: 10%; top: 20%; animation-delay: 0s; }
+.particle:nth-child(2) { left: 20%; top: 80%; animation-delay: 1s; }
+.particle:nth-child(3) { left: 35%; top: 50%; animation-delay: 2s; }
+.particle:nth-child(4) { left: 50%; top: 30%; animation-delay: 3s; }
+.particle:nth-child(5) { left: 65%; top: 70%; animation-delay: 4s; }
+.particle:nth-child(6) { left: 80%; top: 40%; animation-delay: 5s; }
+.particle:nth-child(7) { left: 90%; top: 60%; animation-delay: 2.5s; }
+.particle:nth-child(8) { left: 45%; top: 90%; animation-delay: 3.5s; }
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0) scale(1);
+    opacity: 0.6;
+  }
+  50% {
+    transform: translateY(-30px) scale(1.2);
+    opacity: 1;
+  }
+}
