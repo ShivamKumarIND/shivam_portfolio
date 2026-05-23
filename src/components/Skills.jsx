@@ -30,10 +30,10 @@ const Skills = () => {
     },
     {
       id: 4,
-      title: 'Automation & RPA',
+      title: 'Automation & Operations',
       icon: Cog,
       gradient: 'from-emerald-500 to-teal-500',
-      skills: ['Power Automate', 'Storage Automation', 'Cisco', 'HPE 3PAR', 'Brocade'],
+      skills: ['BPS-BFS', 'Power Automate', 'Storage Automation', 'Cisco', 'HPE 3PAR', 'Brocade'],
     },
     {
       id: 5,

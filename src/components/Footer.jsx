@@ -59,8 +59,8 @@ const Footer = () => {
               SK
             </motion.a>
             <p className="text-cream-400 leading-relaxed">
-              AI Developer & LLM Engineer building intelligent solutions with
-              cutting-edge Generative AI technologies.
+              Assistant Manager at Wipro, building automation and AI solutions
+              across the BPS-BFS domain.
             </p>
           </div>
 

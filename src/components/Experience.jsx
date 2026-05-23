@@ -10,24 +10,37 @@ const Experience = () => {
   const experiences = [
     {
       id: 0,
-      company: 'DXC Technology',
-      role: 'Analyst I — Infrastructure Services',
-      duration: 'Nov 2023 – Present',
+      company: 'Wipro',
+      role: 'Assistant Manager - Automation and AI Engineer',
+      duration: 'Mar 2026 - Present',
       isCurrent: true,
+      points: [
+        'Started a new professional chapter as Assistant Manager in the BPS-BFS domain',
+        'Working on automation and AI engineering initiatives for banking and financial services operations',
+        'Building intelligent automation solutions that combine process optimization with AI capabilities',
+      ],
+      techStack: ['Automation', 'AI Engineering', 'BPS-BFS', 'Python', 'GenAI'],
+    },
+    {
+      id: 1,
+      company: 'DXC Technology',
+      role: 'Analyst I - Infrastructure Services',
+      duration: 'Nov 2023 - Mar 2026',
+      isCurrent: false,
       points: [
         'Built Virtual Linux System Assistant AI Agent and Change Management AI Agent using LangChain + Azure OpenAI',
         'Automated risk analysis across 7,000+ historical failure records',
-        'Built HealthMate AI — RAG-based health report generator',
+        'Built HealthMate AI - RAG-based health report generator',
         'Led end-to-end automation on Cisco, HPE 3PAR, Brocade, Nimble',
         'Developed reusable automation components for multi-client scaling',
       ],
       techStack: ['Python', 'FastAPI', 'LangChain', 'Azure OpenAI', 'Streamlit', 'RAG'],
     },
     {
-      id: 1,
+      id: 2,
       company: 'DXC Technology',
-      role: 'Professional 1 — Service Delivery Coordinator',
-      duration: 'Oct 2022 – Nov 2023',
+      role: 'Professional 1 - Service Delivery Coordinator',
+      duration: 'Oct 2022 - Nov 2023',
       isCurrent: false,
       points: [
         'Delivered 50+ end-to-end automation solutions',
@@ -36,10 +49,10 @@ const Experience = () => {
       techStack: ['PowerShell', 'Bash', 'Power Automate'],
     },
     {
-      id: 2,
+      id: 3,
       company: 'DXC Technology',
-      role: 'Associate Professional — Software Engineer',
-      duration: 'Jan 2021 – Oct 2022',
+      role: 'Associate Professional - Software Engineer',
+      duration: 'Jan 2021 - Oct 2022',
       isCurrent: false,
       points: [
         'Delivered 30+ automation solutions',

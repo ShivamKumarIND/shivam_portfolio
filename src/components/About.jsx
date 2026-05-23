@@ -108,19 +108,20 @@ const About = () => {
               className="flex-1 text-center lg:text-left"
             >
               <h3 className="text-2xl md:text-3xl font-heading font-bold text-dark dark:text-cream mb-6">
-                AI Developer & <span className="text-primary">LLM Engineer</span>
+                Assistant Manager - <span className="text-primary">Automation and AI Engineer</span>
               </h3>
 
               <div className="space-y-4 text-muted dark:text-muted-light text-lg leading-relaxed">
                 <p>
-                  AI Developer with <span className="font-semibold text-dark dark:text-cream">5+ years of experience</span> specializing in 
-                  Generative AI for the past 2 years. Proficient in building 
-                  LLM-powered applications using <span className="text-primary font-medium">OpenAI, Gemini, Claude, and Groq</span>.
+                  I am currently working with <span className="font-semibold text-dark dark:text-cream">Wipro as an Assistant Manager</span>,
+                  where my role focuses on Automation and AI Engineering in the
+                  <span className="text-primary font-medium"> BPS-BFS domain</span>.
                 </p>
                 <p>
-                  Expert in <span className="font-semibold text-dark dark:text-cream">RAG, LangChain, LangGraph</span>, and bridging traditional
-                  automation with cutting-edge GenAI capabilities. Passionate about 
-                  creating intelligent solutions that transform how businesses operate.
+                  I bring <span className="font-semibold text-dark dark:text-cream">5+ years of experience</span> across automation,
+                  infrastructure services, and Generative AI. I left DXC Technology on
+                  March 27, 2026, after building LLM-powered applications and automation
+                  solutions using <span className="text-primary font-medium">OpenAI, Gemini, Claude, Groq, RAG, LangChain, and LangGraph</span>.
                 </p>
               </div>
 

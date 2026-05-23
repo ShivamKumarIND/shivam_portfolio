@@ -67,6 +67,8 @@ const Hero = () => {
                 sequence={[
                   'AI Developer',
                   2000,
+                  'Assistant Manager',
+                  2000,
                   'LLM Engineer',
                   2000,
                   'Automation Expert',
@@ -87,8 +89,9 @@ const Hero = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.7 }}
             >
-              Crafting intelligent AI solutions and automating complex workflows.
-              Transforming ideas into powerful LLM-driven applications.
+              Assistant Manager at Wipro, working as an Automation and AI Engineer
+              in the BPS-BFS domain. Crafting intelligent solutions that connect
+              automation, GenAI, and business operations.
             </motion.p>
 
             {/* CTA Buttons */}
